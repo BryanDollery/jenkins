@@ -1,3 +1,3 @@
-Codification Jenkins Demo Environment v1
+# Jenkins with Plugins
 
-This is the official jenkins image, with added plugins and certs for accessing github.
+This is the official jenkins image, with added plugins
