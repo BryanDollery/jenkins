@@ -22,12 +22,12 @@ run apk add --no-cache  openssl \
     addgroup jenkins docker && \
     addgroup jenkins jenkins && \
     pip install --upgrade pip && \
-    echo "ready"
-run echo "dc" && \
     pip3 install docker-compose
 
-copy plugins.txt /usr/share/jenkins/ref/plugins.txt
+# copy plugins.txt /usr/share/jenkins/ref/plugins.txt
 
-run /usr/local/bin/install-plugins.sh < /usr/share/jenkins/ref/plugins.txt
+env URL_CONNECTION_TIMEOUT=30
+
+# run /usr/local/bin/install-plugins.sh < /usr/share/jenkins/ref/plugins.txt
 
 user jenkins
