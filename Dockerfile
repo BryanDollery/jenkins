@@ -29,7 +29,7 @@ run apk add --no-cache  openssl \
 run curl -LSs https://downloads.apache.org/maven/maven-3/3.6.3/binaries/apache-maven-3.6.3-bin.tar.gz | tar -xz
 
 env M2_HOME=/apache-maven-3.6.3
-env JAVA_HOME=/opt/java/openjdk/
+env JAVA_HOME=/usr/lib/jvm/default-jvm
 env PATH=$PATH:/$M2_HOME/bin
 env URL_CONNECTION_TIMEOUT=30
 
